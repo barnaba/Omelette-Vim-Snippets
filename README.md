@@ -1,5 +1,7 @@
-# vim-omelette
-This plugin provides snippets for [omelette language](https://github.com/pienkowb/omelette).
+# omelette vi fromage
+This plugin provides snippets for [omelette language](https://github.com/pienkowb/omelette) as well as some basic syntax highlighting.
+
+![example of syntax highlighting](Omelette-Vim-Snippets/raw/master/highlight.png)
 
 ## Dependencies
 vim-omelette requires [snipmate](http://www.vim.org/scripts/script.php?script_id=2540) installed.
@@ -123,3 +125,4 @@ For attributes all snippets are "lowercase".
   </tbody>
 </table>
       
+
