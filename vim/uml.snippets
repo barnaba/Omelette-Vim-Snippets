@@ -1,0 +1,111 @@
+snippet c
+	class ${1:handle}
+snippet cls
+	class ${1:handle}
+		name 	        : "${2:name}"
+		stereotype    : "${3:stereotype}"
+	${4}
+snippet +
+		+${1:name}(${2:args}) : ${3:return_type} 
+snippet _
+		-${1:name}(${2:args}) : ${3:return_type} 
+snippet #
+		#${1:name}(${2:args}) : ${3:return_type} 
+snippet =
+		+${1:name} : ${2:type} = ${3:value}
+snippet -
+		-${1:name} : ${2:type} = ${3:value}
+snippet 3
+		#${1:name} : ${2:type} = ${3:value}
+snippet r
+	relation ${1}
+		source-object : ${2}
+		target-object : ${3}
+	${4}
+snippet rel
+	relation ${1}
+		source-object : ${2}
+		source-count  : ${3}
+		source-role   : "${4:role}"
+
+		target-object : ${5}
+		target-count  : ${6}
+		target-role   : "${7:role}"
+
+		name          : "${8:name}"
+	${9}
+snippet a
+	association ${1}
+		source-object : ${2}
+		target-object : ${3}
+snippet ass
+	association ${1}
+		source-object : ${2}
+		source-count  : ${3}
+		source-role   : "${4:role}"
+
+		target-object : ${5}
+		target-count  : ${6}
+		target-role   : "${7:role}"
+
+		name          : "${8:name}"
+	${9}
+snippet g
+	generalization ${1}
+		source-object : ${2:subclass}
+		target-object : ${3:superclass}
+	${4}
+snippet gen 
+	generalization ${1}
+		source-object : ${2:subclass}
+
+		target-object : ${5:superclass}
+
+		name          : "${8:name}"
+	${9}
+snippet A
+	aggregation ${1}
+		source-object : ${2:aggregate}
+		target-object : ${3:aggregator}
+	${4}
+snippet agg
+	aggregation ${1}
+		source-object : ${2:aggregate}
+		source-count  : ${3}
+		source-role   : "${4:role}"
+
+		target-object : ${5:aggregator}
+		target-count  : ${6}
+		target-role   : "${7:role}"
+
+		name          : "${8:name}"
+	${9}
+snippet C
+	composition ${1}
+		source-object : ${2:part}
+		target-object : ${3:owner}
+	${4}
+snippet com
+	composition ${1}
+		source-object : ${2:part}
+		source-count  : ${3}
+		source-role   : "${4:role}"
+
+		target-object : ${5:owner}
+		target-count  : ${6}
+		target-role   : "${7:role}"
+
+		name          : "${8:name}"
+	${9}
+snippet uc
+	usecase ${1}
+		name : "${2:name}"
+	${3}
+snippet ua
+	actor ${1}
+		name : "${2:name}"
+	${3}
+snippet n
+	note ${1}
+		text : "${2:name}"
+	${3}
