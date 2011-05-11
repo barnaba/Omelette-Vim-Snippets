@@ -17,6 +17,8 @@ Snipmate works by expanding trigger words. After typing trigger word hit tab to 
 
 Note: the filetype has to be `uml`. You should use `.uml` file extension.
 
+`:Fromage` command will compile and display current buffer.
+
 ### Example
 typing
 
@@ -33,6 +35,15 @@ you can use Tab to set the handle of relation, and both source and target object
     generalization handle
       source-object : son
       target-object : father
+
+## Customization
+Currently you can only customize the name of the temporary file, which `:Fromage` command creates, and the name of imageviewer you want to use.
+It is done by adding the following lines to your `.vimrc`:
+
+    "image viewer you want to use, default is eye of gnome
+    let g:FromageViewer="eog"
+    "Where do you want the temporary file. Default is /tmp/asd.png"
+    g:FromageFile="/tmp/asd.png"
 
 ### Snippets
 Most of snippets for complicated objects (such as relations) come in two flavours: short, and long.
@@ -90,6 +101,11 @@ Long version produces object with all possible properties.
     <tr>
       <td>actor</td>
       <td>ua</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>note</td>
+      <td>n</td>
       <td>-</td>
     </tr>
   </tbody>
